@@ -6,6 +6,10 @@ User.create name: 'Marcos', status: :active, kind: :manager, email: 'manager@tes
 # Criando alguns produtos de exemplo
 Product.create name: 'Smartphone', description:'Um smartphone novo ...', status: :active, price: 10
 Product.create name: 'Tablet', description:'Um tablet novo ...', status: :active, price: 20
+Product.create name: 'Calculadora', description:'Uma Calculadora nova ...', status: :active, price: 8
+Product.create name: 'Cabo Usb', description:'Cabo Usb ...', status: :active, price: 16
+Product.create name: 'PenDriver', description:'Armazenamento de Dados ...', status: :active, price: 12
+
  
 # Criando um desconto de exemplo
 Discount.create name: 'Desconto carnaval', description: 'Aplique esse desconto no carnaval', value: '10', kind: :porcent, status: :active

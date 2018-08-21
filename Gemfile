@@ -24,6 +24,7 @@ gem 'carrierwave'
 
 gem 'devise'
 gem 'cancancan'
+gem 'rails_admin_rollincode', :git => 'git@github.com:wellingtondevops/rollingcolor.git'
 
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

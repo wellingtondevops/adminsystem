@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:wellingtondevops/rollingcolor.git
+  revision: 5a6e39b3beb846cf9121ddcadebec20278cdd990
+  specs:
+    rails_admin_rollincode (1.2.1)
+      rails (>= 4.0, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -269,6 +276,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.1)
   rails_admin
+  rails_admin_rollincode!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

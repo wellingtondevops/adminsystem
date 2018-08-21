@@ -1,4 +1,17 @@
 RailsAdmin.config do |config|
+  
+  
+
+  config.main_app_name = ["Representantes Comerciais", ""]
+  
+  config.navigation_static_links = {
+  'WellingtonDevops' => 'https://github.com/wellingtondevops'
+}
+ 
+config.navigation_static_label = "Lins Úteis"
+
+
+
 
   ### Popular gems integration
 
@@ -24,6 +37,7 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
 config.model Sale do
+  navigation_icon 'fa fa-money'
   create do
     field  :client
     field  :sale_date
@@ -53,7 +67,12 @@ config.model Sale do
   end
 end
  
+ 
+ 
+ 
+ 
 config.model Client do
+  navigation_icon 'fas fa-users'
   create do
     field  :name
     field  :company_name
@@ -101,12 +120,42 @@ config.model Client do
  
   end
 end
+
+  config.model Discount do
+    parent Product
+  end
+   
+  config.model Sale do
+    parent User
+    weight -2
+  end
+   
+  config.model Comission do
+    
+    parent User
+    weight -1
+  end
+   
+  config.model Client do
+    parent User
+  end
+   
+  config.model ProductQuantity do
+    visible false
+  end
+   
+  config.model Address do
+    navigation_icon 'fas fa-map-marked'
+    visible false
+  end
+
  
 config.model ProductQuantity do
   visible false
 end
  
 config.model Address do
+  
   visible false
 end
  
